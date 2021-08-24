@@ -90,3 +90,35 @@ class automaticEspressoMachine extends CoffeeMake {
         console.log('Get access to additional milk based beverages through the Milk Menu function. The machine automatically makes steamed milk, flat white , espresso macchiato and even a "My Milk" option for your custom creations');
     }
 }
+
+let ICM17270 = new DripCoffeeMaker(false, 'Paper', true, 'Glass', true, true, true, 'Silver', 1200, true)
+ICM17270.on();
+console.log(ICM17270);
+console.log(ICM17270.isOn);
+ICM17270.off();
+ICM17270.on();
+console.log(ICM17270);
+ICM17270.off();
+console.log(ICM17270);
+ICM17270.overIceBrewingFunction();
+ICM17270.pourOverBrewingFunction();
+ICM17270.warmingPlate();
+console.log('---------------------------------');
+
+let EC850M = new PumpEspressoCoffeeMachine(false, true, true, 1450, true, 'Automatic', true, 'Thermoblock', true, true, true, 'Stainless steel', 3, 'Metal');
+console.log(EC850M);
+EC850M.on()
+EC850M.off();
+EC850M.the15BarPressure();
+EC850M.automaticCappucchinoSystem();
+EC850M.dualThermoblockTecnology();
+EC850M.doubleDripTray()
+console.log('------------------------');
+
+let ECAM44660B = new automaticEspressoMachine(false, 1250, 'black', true, true, true, '2-line with icons')
+console.log(ECAM44660B);
+ECAM44660B.off()
+ECAM44660B.on();
+ECAM44660B.autoStart();
+ECAM44660B.settingWaterHardness();
+ECAM44660B.milkMenu();
